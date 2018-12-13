@@ -79,12 +79,224 @@
                             <li class="module-li">
                                 <span class="module-li-tit">税前工资（月）</span>
                                 <input class="module-li-short" type="text">
+                                <span>元</span>
+                            </li>
+                            <li class="module-li">
+                                <span class="module-li-tit">年终奖</span>
+                                <input class="module-li-short" type="text">
+                                <span>元</span>
+                            </li>
+                            <li class="module-li">
+                                <span class="module-li-tit">劳务报酬（兼职）</span>
+                                <input class="module-li-short" type="text">
+                                <span>元</span>
+                            </li>
+                            <li class="module-li">
+                                <span class="module-li-tit">稿酬</span>
+                                <input class="module-li-short" type="text">
+                                <span>元</span>
+                            </li>
+                            <li class="module-li">
+                                <span class="module-li-tit">特许权使用费</span>
+                                <input class="module-li-short" type="text">
+                                <span>元</span>
                             </li>
                         </ul>
                     </div>
-                </div>
-            </div>
+                    <div class="module">
+                        <div class="module-tit">
+                            <img src="../../static/images/2.png" alt="">
+                            <span>五险一金</span>
+                            <input id="all" type="checkbox">
+                            <label for="all">总数</label>
+                        </div>
+                        <ul class="module-ul">
+                            <li class="module-li">
+                                <span class="module-li-tit">基本养老保险</span>
+                                <input class="module-li-short" type="text">
+                                <span>元</span>
+                            </li>
+                            <li class="module-li">
+                                <span class="module-li-tit">补充养老保险</span>
+                                <input class="module-li-short" type="text">
+                                <span>元</span>
+                            </li>
+                            <li class="module-li">
+                                <span class="module-li-tit">基本医疗保险</span>
+                                <input class="module-li-short" type="text">
+                                <span>元</span>
+                            </li>
+                            <li class="module-li">
+                                <span class="module-li-tit">补充医疗保险</span>
+                                <input class="module-li-short" type="text">
+                                <span>元</span>
+                            </li>
+                            <li class="module-li">
+                                <span class="module-li-tit">失业保险</span>
+                                <input class="module-li-short" type="text">
+                                <span>元</span>
+                            </li>
+                            <li class="module-li">
+                                <span class="module-li-tit">住房公积金</span>
+                                <input class="module-li-short" type="text">
+                                <span>元</span>
+                            </li>
+                            <li class="module-li">
+                                <span class="module-li-tit">总数</span>
+                                <input class="module-li-short" type="text">
+                                <span>元</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="module">
+                        <div class="module-tit">
+                            <img src="../../static/images/2.png" alt="">
+                            <span>专项附加扣除</span>
+                        </div>
+                        <ul class="module-ul">
+                            <li class="module-subheading">
+                                <span>子女教育人数</span>
+                            </li>
+                            <li class="module-li-choice">
+                                <div class="choice">
+                                    单个子女1000/月
+                                </div>
+                            </li>
+                            <li class="module-li-choice">
+                                <input class='choice-input' type="text" placeholder="请输入子女个数">
+                            </li>
+                            <li class="module-li-choice">
+                                <div class="choice">
+                                    夫妻一方扣除100%
+                                </div>
+                            </li>
+                            <li class="module-li-choice">
+                                <div class="choice">
+                                    夫妻各扣除50%
+                                </div>
+                            </li>
+                            <li class="module-subheading">
+                                <span>继续教育</span>
+                            </li>
+                            <li class="module-li-choice">
+                                <div class="choice">
+                                    学历教育
+                                </div>
+                            </li>
+                            <li class="module-li-choice">
+                                <div class="choice">
+                                    职业资格教育
+                                </div>
+                            </li>
+                            <li class="module-subheading">
+                                <span>继续教育</span>
+                            </li>
+                            <li class="module-li-choice">
+                                <div class="choice">
+                                    填写首套住房贷款利息
+                                </div>
+                            </li>
+                            <li class="module-li-choice">
+                                <div class="choice">
+                                    直辖市、省会城市
+                                </div>
+                            </li>
+                            <li class="module-li-choice">
+                                <div class="choice">
+                                    市辖区户籍人口超过100万
+                                </div>
+                            </li>
+                            <li class="module-li-choice">
+                                <div class="choice">
+                                    市辖区人口不超过100万（含）
+                                </div>
+                            </li>
+                            <li class="module-subheading">
+                                <span>赡养老人（60岁以上）</span>
+                            </li>
+                            <li class="module-li-choice">
+                                <div class="choice">
+                                    独生子女
+                                </div>
+                            </li>
+                            <li class="module-li-choice">
+                                <div class="choice">
+                                    非独生子女
+                                </div>
+                            </li>
+                            <li class="module-li-choice">
+                                <input class='choice-input' type="text" placeholder="请输入金额">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="module">
+                        <div class="module-tit">
+                            <img src="../../static/images/2.png" alt="">
+                            <span>其他扣除</span>
+                        </div>
+                        <ul class="module-ul">
+                            <li class="module-li">
+                                <span class="module-li-tit">免税所得</span>
+                                <input class="module-li-short" type="text">
+                                <span>元</span>
+                            </li>
+                            <li class="module-li">
+                                <span class="module-li-tit">商业健康保险</span>
+                                <input class="module-li-short" type="text">
+                                <span>元</span>
+                            </li>
+                            <li class="module-li">
+                                <span class="module-li-tit">捐赠</span>
+                                <input class="module-li-short" type="text">
+                                <span>元</span>
+                            </li>
+                            <li class="module-li">
+                                <span class="module-li-tit">其他扣除</span>
+                                <input class="module-li-short" type="text">
+                                <span>元</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn">
+                        计算
+                    </div>
+                    <div class="module">
+                        <div class="module-tit">
+                            <img src="../../static/images/2.png" alt="">
+                            <span>计算结果</span>
+                        </div>
+                        <ul class="module-ul">
+                            <li class="module-li">
+                                <span class="module-li-tit">计算结果</span>
+                                <input class="module-li-short" type="text">
+                                <span>元</span>
+                            </li>
+                            <li class="module-li">
+                                <span class="module-li-tit">税前收入</span>
+                                <input class="module-li-short" type="text">
+                                <span>元</span>
+                            </li>
+                            <li class="module-li">
+                                <span class="module-li-tit">适用税率</span>
+                                <input class="module-li-short" type="text">
+                                <span>元</span>
+                            </li>
+                            <li class="module-li">
+                                <span class="module-li-tit">应纳税额</span>
+                                <input class="module-li-short" type="text">
+                                <span>元</span>
+                            </li>
+                            <li class="module-li">
+                                <span class="module-li-tit">税后收入</span>
+                                <input class="module-li-short" type="text">
+                                <span>元</span>
+                            </li>
+                        </ul>
+                    </div>
 
+                </div>
+
+            </div>
         </div>
         <footer>
 
@@ -224,15 +436,14 @@
     .content .main{
         display: inline-block;
         width:972px;
-        height:2000px;
         border-radius: 5px;
         background-color: #fff;
         box-shadow: 0px 0px 15px 0px #ccc;
         position: absolute;
         top:-43px;
         left:56px;
-        padding: 0px 58px;
-        text-align: left;
+        padding: 0px 58px 30px;
+        text-align: center;
     }
     .content .main h2{
         font-size:24px;
@@ -282,15 +493,20 @@
     .content .module{
         width:100%;
         margin-top: 30px;
+        text-align: left;
     }
     .content .module .module-tit{
         display: inline-block;
         border-bottom: 1px solid #1a96d4;
         padding: 5px 15px 5px 10px;
+        font-size:16px;
+    }
+    .content .module .module-tit #all{
+        width:16px;
+        height:16px;
     }
     .content .module .module-ul{
         width:100%;
-        margin-top: 18px;
         font-size:0;
     }
     .content .module .module-ul .module-li{
@@ -299,18 +515,75 @@
         height:36px;
         font-size:14px;
         color: #333;
+        margin-top:20px;
     }
     .content .module .module-ul .module-li .module-li-tit{
         display: inline-block;
-        width:140px;
+        width:120px;
         height:100%;
         line-height: 1;
+        font-size: 14px;
+        margin-left: 20px;
     }
     .content .module .module-ul .module-li .module-li-short{
         display: inline-block;
-        width:330px;
+        width:320px;
         height:32px;
         line-height: 1;
+        font-size:14px;
+        text-align: center;
+        border: 1px solid #ccc;
+    }
+    .content .module .module-ul .module-subheading{
+        width:100%;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+    }
+    .content .module .module-ul .module-subheading span{
+        font-size:14px;
+        color: #333;
+        border-left:1px solid #1a96d4;
+        padding-left: 10px;
+    }
+    .content .module .module-ul .module-li-choice{
+        display: inline-block;
+        width:50%;
+        height:36px;
+        font-size:14px;
+        color: #333;
+        margin-top:20px;
+    }
+    .content .module .module-ul .module-li-choice .choice{
+        width:440px;
+        height:32px;
+        border: 1px solid #ccc;
+        text-align: center;
+        line-height: 32px;
+        color: #333;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .content .module .module-ul .module-li-choice .choice-input{
+        width:440px;
+        height:32px;
+        border: 1px solid #ccc;
+        text-align: center;
+        line-height: 32px;
+        color: #333;
+        margin-left: 10px;
+    }
+    .content .btn{
+        display: inline-block;
+        width: 224px;
+        height: 42px;
+        font-size:22px;
+        color: #fff;
+        background-color: #13b5ea;
+        text-align: center;
+        line-height: 42px;
+        border-radius: 3px;
+        margin-top: 40px;
+        cursor: pointer;
     }
 </style>
 
