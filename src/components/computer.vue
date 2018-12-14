@@ -30,283 +30,89 @@
                 <div class="main">
                     <h2>个人所得税计算</h2>
                     <ul class="main-ul">
-                        <li class="main-li current">
+                        <router-link to="/comprehensiveIncome" @click.native="switchClick(1)" :class="{current:isCurrent == 1}" tag="li" class="main-li" >
                             <p class="main-li-tit cf">
-                                <img class="icon" src="../../static/images/bais2.png" alt="">
-                                <span class="title-name">综合所得</span>
+                                <span class="icon-1"></span>
+                                <span :class="{white:isCurrent == 1}" class="title-name">综合所得</span>
                             </p>
-                            <p class="main-li-content">工资、年终奖、劳务</p>
-                        </li>
-                        <li class="main-li">
+                            <p :class="{white:isCurrent == 1}" class="main-li-content">工资、年终奖、劳务</p>
+                        </router-link>
+                        <router-link to="/production" @click.native="switchClick(2)" :class="{current:isCurrent == 2}" tag="li" class="main-li">
                             <p class="main-li-tit cf">
-                                <img class="icon" src="../../static/images/bais1.png" alt="">
-                                <span class="title-name">生产经营所得</span>
+                                <span class="icon-2"></span>
+                                <span :class="{white:isCurrent == 2}" class="title-name">生产经营所得</span>
                             </p>
-                            <p class="main-li-content">个体工商户、合伙企业、个人独资企业</p>
-                        </li>
-                        <li class="main-li">
+                            <p :class="{white:isCurrent == 2}" class="main-li-content">个体工商户、合伙企业、个人独资企业</p>
+                        </router-link>
+                        <router-link to="/lease" @click.native="switchClick(3)" :class="{current:isCurrent == 3}" tag="li" class="main-li">
                             <p class="main-li-tit cf">
-                                <img class="icon" src="../../static/images/bais1.png" alt="">
-                                <span class="title-name">财产租赁所得</span>
+                                <span class="icon-3"></span>
+                                <span :class="{white:isCurrent == 3}" class="title-name">财产租赁所得</span>
                             </p>
-                            <p class="main-li-content">租房、租车、租设备</p>
-                        </li>
-                        <li class="main-li">
+                            <p :class="{white:isCurrent == 3}" class="main-li-content">租房、租车、租设备</p>
+                        </router-link>
+                         <router-link to="/interest" @click.native="switchClick(4)" :class="{current:isCurrent == 4}" tag="li" class="main-li">
                             <p class="main-li-tit cf">
-                                <img class="icon" src="../../static/images/bais1.png" alt="">
-                                <span class="title-name">利息、股息、红利所得</span>
+                                <span class="icon-4"></span>
+                                <span :class="{white:isCurrent == 4}" class="title-name">利息、股息、红利所得</span>
                             </p>
-                        </li>
-                        <li class="main-li">
+                        </router-link>
+                         <router-link to="/transfer" @click.native="switchClick(5)" :class="{current:isCurrent == 5}" tag="li" class="main-li">
                             <p class="main-li-tit cf">
-                                <img class="icon" src="../../static/images/bais1.png" alt="">
-                                <span class="title-name">财产转让所得</span>
+                                <span class="icon-5"></span>
+                                <span :class="{white:isCurrent == 5}" class="title-name">财产转让所得</span>
                             </p>
-                        </li>
-                        <li class="main-li">
+                        </router-link>
+                         <router-link to="/accidental" @click.native="switchClick(6)" :class="{current:isCurrent == 6}" tag="li" class="main-li">
                             <p class="main-li-tit cf">
-                                <img class="icon" src="../../static/images/bais1.png" alt="">
-                                <span class="title-name">偶然所得</span>
+                                <span class="icon-6"></span>
+                                <span :class="{white:isCurrent == 6}" class="title-name">偶然所得</span>
                             </p>
-                        </li>
+                        </router-link>
                     </ul>
-                    <div class="module">
-                        <div class="module-tit">
-                            <img src="../../static/images/2.png" alt="">
-                            <span>收入</span>
-                        </div>
-                        <ul class="module-ul">
-                            <li class="module-li">
-                                <span class="module-li-tit">税前工资（月）</span>
-                                <input class="module-li-short" type="text">
-                                <span>元</span>
-                            </li>
-                            <li class="module-li">
-                                <span class="module-li-tit">年终奖</span>
-                                <input class="module-li-short" type="text">
-                                <span>元</span>
-                            </li>
-                            <li class="module-li">
-                                <span class="module-li-tit">劳务报酬（兼职）</span>
-                                <input class="module-li-short" type="text">
-                                <span>元</span>
-                            </li>
-                            <li class="module-li">
-                                <span class="module-li-tit">稿酬</span>
-                                <input class="module-li-short" type="text">
-                                <span>元</span>
-                            </li>
-                            <li class="module-li">
-                                <span class="module-li-tit">特许权使用费</span>
-                                <input class="module-li-short" type="text">
-                                <span>元</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="module">
-                        <div class="module-tit">
-                            <img src="../../static/images/2.png" alt="">
-                            <span>五险一金</span>
-                            <input id="all" type="checkbox">
-                            <label for="all">总数</label>
-                        </div>
-                        <ul class="module-ul">
-                            <li class="module-li">
-                                <span class="module-li-tit">基本养老保险</span>
-                                <input class="module-li-short" type="text">
-                                <span>元</span>
-                            </li>
-                            <li class="module-li">
-                                <span class="module-li-tit">补充养老保险</span>
-                                <input class="module-li-short" type="text">
-                                <span>元</span>
-                            </li>
-                            <li class="module-li">
-                                <span class="module-li-tit">基本医疗保险</span>
-                                <input class="module-li-short" type="text">
-                                <span>元</span>
-                            </li>
-                            <li class="module-li">
-                                <span class="module-li-tit">补充医疗保险</span>
-                                <input class="module-li-short" type="text">
-                                <span>元</span>
-                            </li>
-                            <li class="module-li">
-                                <span class="module-li-tit">失业保险</span>
-                                <input class="module-li-short" type="text">
-                                <span>元</span>
-                            </li>
-                            <li class="module-li">
-                                <span class="module-li-tit">住房公积金</span>
-                                <input class="module-li-short" type="text">
-                                <span>元</span>
-                            </li>
-                            <li class="module-li">
-                                <span class="module-li-tit">总数</span>
-                                <input class="module-li-short" type="text">
-                                <span>元</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="module">
-                        <div class="module-tit">
-                            <img src="../../static/images/2.png" alt="">
-                            <span>专项附加扣除</span>
-                        </div>
-                        <ul class="module-ul">
-                            <li class="module-subheading">
-                                <span>子女教育人数</span>
-                            </li>
-                            <li class="module-li-choice">
-                                <div class="choice">
-                                    单个子女1000/月
-                                </div>
-                            </li>
-                            <li class="module-li-choice">
-                                <input class='choice-input' type="text" placeholder="请输入子女个数">
-                            </li>
-                            <li class="module-li-choice">
-                                <div class="choice">
-                                    夫妻一方扣除100%
-                                </div>
-                            </li>
-                            <li class="module-li-choice">
-                                <div class="choice">
-                                    夫妻各扣除50%
-                                </div>
-                            </li>
-                            <li class="module-subheading">
-                                <span>继续教育</span>
-                            </li>
-                            <li class="module-li-choice">
-                                <div class="choice">
-                                    学历教育
-                                </div>
-                            </li>
-                            <li class="module-li-choice">
-                                <div class="choice">
-                                    职业资格教育
-                                </div>
-                            </li>
-                            <li class="module-subheading">
-                                <span>继续教育</span>
-                            </li>
-                            <li class="module-li-choice">
-                                <div class="choice">
-                                    填写首套住房贷款利息
-                                </div>
-                            </li>
-                            <li class="module-li-choice">
-                                <div class="choice">
-                                    直辖市、省会城市
-                                </div>
-                            </li>
-                            <li class="module-li-choice">
-                                <div class="choice">
-                                    市辖区户籍人口超过100万
-                                </div>
-                            </li>
-                            <li class="module-li-choice">
-                                <div class="choice">
-                                    市辖区人口不超过100万（含）
-                                </div>
-                            </li>
-                            <li class="module-subheading">
-                                <span>赡养老人（60岁以上）</span>
-                            </li>
-                            <li class="module-li-choice">
-                                <div class="choice">
-                                    独生子女
-                                </div>
-                            </li>
-                            <li class="module-li-choice">
-                                <div class="choice">
-                                    非独生子女
-                                </div>
-                            </li>
-                            <li class="module-li-choice">
-                                <input class='choice-input' type="text" placeholder="请输入金额">
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="module">
-                        <div class="module-tit">
-                            <img src="../../static/images/2.png" alt="">
-                            <span>其他扣除</span>
-                        </div>
-                        <ul class="module-ul">
-                            <li class="module-li">
-                                <span class="module-li-tit">免税所得</span>
-                                <input class="module-li-short" type="text">
-                                <span>元</span>
-                            </li>
-                            <li class="module-li">
-                                <span class="module-li-tit">商业健康保险</span>
-                                <input class="module-li-short" type="text">
-                                <span>元</span>
-                            </li>
-                            <li class="module-li">
-                                <span class="module-li-tit">捐赠</span>
-                                <input class="module-li-short" type="text">
-                                <span>元</span>
-                            </li>
-                            <li class="module-li">
-                                <span class="module-li-tit">其他扣除</span>
-                                <input class="module-li-short" type="text">
-                                <span>元</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="btn">
-                        计算
-                    </div>
-                    <div class="module">
-                        <div class="module-tit">
-                            <img src="../../static/images/2.png" alt="">
-                            <span>计算结果</span>
-                        </div>
-                        <ul class="module-ul">
-                            <li class="module-li">
-                                <span class="module-li-tit">计算结果</span>
-                                <input class="module-li-short" type="text">
-                                <span>元</span>
-                            </li>
-                            <li class="module-li">
-                                <span class="module-li-tit">税前收入</span>
-                                <input class="module-li-short" type="text">
-                                <span>元</span>
-                            </li>
-                            <li class="module-li">
-                                <span class="module-li-tit">适用税率</span>
-                                <input class="module-li-short" type="text">
-                                <span>元</span>
-                            </li>
-                            <li class="module-li">
-                                <span class="module-li-tit">应纳税额</span>
-                                <input class="module-li-short" type="text">
-                                <span>元</span>
-                            </li>
-                            <li class="module-li">
-                                <span class="module-li-tit">税后收入</span>
-                                <input class="module-li-short" type="text">
-                                <span>元</span>
-                            </li>
-                        </ul>
-                    </div>
-
+                    <router-view></router-view>
                 </div>
-
             </div>
         </div>
         <footer>
-
+            <div class="w">
+                <div class="left">
+                    <p class="left-h1">友情链接</p>
+                    <p><a href="#">九鼎集团官网</a></p>
+                    <p><a href="#">云会计云服务</a></p>
+                    <p><a href="#">钱包行云</a></p>
+                    <p><a href="#">南昊教育</a></p>
+                </div>
+                <div class="content">
+                    <p class="content-h1">联系我们</p>
+                    <p>名称：云会计联盟（北京）科技有限公司</p>
+                    <p>地址：北京学清路科技财富中心8号院502B</p>
+                    <p>电话：010-53683512</p>
+                    <p>邮箱：ykj@cloudaccounting.cn</p>
+                </div>
+                <div class="right">
+                    <p class="right-h1">官方微信</p>
+                    <img src="../../static/images/11.png" alt="">
+                </div>
+                <span>Copyright 2015-2017 云会计科技联盟有限公司  京ICP备17043046号</span>
+            </div>
         </footer>
     </div>
 </template>
 
 <script>
+    import Vue from 'vue'
     export default {
-
+        data(){
+            return{
+                isCurrent:'',//
+            }
+        },
+        methods:{
+            switchClick(n){
+                this.isCurrent = String(n);
+            }
+        },
     }
 </script>
 <style scoped>
@@ -439,11 +245,10 @@
         border-radius: 5px;
         background-color: #fff;
         box-shadow: 0px 0px 15px 0px #ccc;
-        position: absolute;
-        top:-43px;
-        left:56px;
         padding: 0px 58px 30px;
         text-align: center;
+        margin-top: -43px;
+        margin-bottom: 30px;
     }
     .content .main h2{
         font-size:24px;
@@ -464,9 +269,7 @@
         margin-top: 20px;
         cursor: pointer;
     }
-    .content .main .main-ul .current{
-        background-color: #b6ddee;
-    }
+
     .content .main .main-ul .main-li .main-li-tit{
         display: inline-block;
         width:100%;
@@ -479,6 +282,72 @@
         vertical-align: middle;
         margin-right: 14px;
     }
+    .content .main .main-ul .main-li .main-li-tit .icon-1{
+        display:inline-block;
+        width:43px;
+        height:43px;
+        vertical-align: middle;
+        margin-right: 14px;
+        background: url("../../static/images/img1.png") no-repeat;
+    }
+    .content .main .main-ul .main-li.current .main-li-tit .icon-1{
+        background: url("../../static/images/img1w.png") no-repeat;
+    }
+    .content .main .main-ul .main-li .main-li-tit .icon-2{
+        display:inline-block;
+        width:43px;
+        height:43px;
+        vertical-align: middle;
+        margin-right: 14px;
+        background: url("../../static/images/img2.png") no-repeat;
+    }
+    .content .main .main-ul .main-li.current .main-li-tit .icon-2{
+        background: url("../../static/images/img2w.png") no-repeat;
+    }
+    .content .main .main-ul .main-li .main-li-tit .icon-3{
+        display:inline-block;
+        width:43px;
+        height:43px;
+        vertical-align: middle;
+        margin-right: 14px;
+        background: url("../../static/images/img3.png") no-repeat;
+    }
+    .content .main .main-ul .main-li.current .main-li-tit .icon-3{
+        background: url("../../static/images/img3w.png") no-repeat;
+    }
+    .content .main .main-ul .main-li .main-li-tit .icon-4{
+        display:inline-block;
+        width:43px;
+        height:43px;
+        vertical-align: middle;
+        margin-right: 14px;
+        background: url("../../static/images/img4.png") no-repeat;
+    }
+    .content .main .main-ul .main-li.current .main-li-tit .icon-4{
+        background: url("../../static/images/img4w.png") no-repeat;
+    }
+    .content .main .main-ul .main-li .main-li-tit .icon-5{
+        display:inline-block;
+        width:43px;
+        height:43px;
+        vertical-align: middle;
+        margin-right: 14px;
+        background: url("../../static/images/img5.png") no-repeat;
+    }
+    .content .main .main-ul .main-li.current .main-li-tit .icon-5{
+        background: url("../../static/images/img5w.png") no-repeat;
+    }
+    .content .main .main-ul .main-li .main-li-tit .icon-6{
+        display:inline-block;
+        width:43px;
+        height:43px;
+        vertical-align: middle;
+        margin-right: 14px;
+        background: url("../../static/images/img6.png") no-repeat;
+    }
+    .content .main .main-ul .main-li.current .main-li-tit .icon-6{
+        background: url("../../static/images/img6w.png") no-repeat;
+    }
     .content .main .main-ul .main-li .main-li-tit .title-name{
         display: inline-block;
         height:43px;
@@ -490,100 +359,83 @@
         font-size:14px;
         margin-top: 16px;
     }
-    .content .module{
-        width:100%;
-        margin-top: 30px;
-        text-align: left;
+    .content .main .main-ul .current{
+        background-color: #b6ddee;
     }
-    .content .module .module-tit{
+    .content .w .main .main-ul .main-li .white{
+        color: #fff;
+    }
+    footer{
+        width:100%;
+        height:220px;
+        background-color: #2b3b4c;
+    }
+
+    footer .left{
+        width:30%;
+        border-right: 1px solid #fff;
+        height:100px;
         display: inline-block;
-        border-bottom: 1px solid #1a96d4;
-        padding: 5px 15px 5px 10px;
+        float: left;
+        margin-top: 30px;
+        color: #fff;
+    }
+    footer .left .left-h1{
+        margin-top: 0px;
         font-size:16px;
     }
-    .content .module .module-tit #all{
-        width:16px;
-        height:16px;
+    footer .left p{
+        margin-top: 8px;
+        margin-left: 60%;
     }
-    .content .module .module-ul{
-        width:100%;
-        font-size:0;
-    }
-    .content .module .module-ul .module-li{
-        display: inline-block;
-        width:50%;
-        height:36px;
-        font-size:14px;
-        color: #333;
-        margin-top:20px;
-    }
-    .content .module .module-ul .module-li .module-li-tit{
-        display: inline-block;
-        width:120px;
-        height:100%;
-        line-height: 1;
-        font-size: 14px;
-        margin-left: 20px;
-    }
-    .content .module .module-ul .module-li .module-li-short{
-        display: inline-block;
-        width:320px;
-        height:32px;
-        line-height: 1;
-        font-size:14px;
-        text-align: center;
-        border: 1px solid #ccc;
-    }
-    .content .module .module-ul .module-subheading{
-        width:100%;
-        border-bottom: 1px solid #ccc;
-        padding: 10px 0;
-    }
-    .content .module .module-ul .module-subheading span{
-        font-size:14px;
-        color: #333;
-        border-left:1px solid #1a96d4;
-        padding-left: 10px;
-    }
-    .content .module .module-ul .module-li-choice{
-        display: inline-block;
-        width:50%;
-        height:36px;
-        font-size:14px;
-        color: #333;
-        margin-top:20px;
-    }
-    .content .module .module-ul .module-li-choice .choice{
-        width:440px;
-        height:32px;
-        border: 1px solid #ccc;
-        text-align: center;
-        line-height: 32px;
-        color: #333;
-        margin-left: 10px;
-        cursor: pointer;
-    }
-    .content .module .module-ul .module-li-choice .choice-input{
-        width:440px;
-        height:32px;
-        border: 1px solid #ccc;
-        text-align: center;
-        line-height: 32px;
-        color: #333;
-        margin-left: 10px;
-    }
-    .content .btn{
-        display: inline-block;
-        width: 224px;
-        height: 42px;
-        font-size:22px;
+    footer .left a{
+        font-size:12px;
         color: #fff;
-        background-color: #13b5ea;
+        text-decoration: none;
+    }
+
+    footer .content{
+        width:39%;
+        height:100px;
+        display: inline-block;
+        margin-top: 30px;
         text-align: center;
-        line-height: 42px;
-        border-radius: 3px;
-        margin-top: 40px;
-        cursor: pointer;
+        color: #fff;
+    }
+    footer .content .content-h1{
+        margin-top: 0px;
+        font-size:16px;
+    }
+    footer .content p{
+        margin-top: 8px;
+        font-size:12px;
+    }
+
+    footer .right{
+        width:30%;
+        border-left: 1px solid #fff;
+        height:100px;
+        display: inline-block;
+        float: right;
+        margin-top: 30px;
+        color: #fff;
+    }
+    footer .right .right-h1{
+        margin-top: 0px;
+        margin-left: 20%;
+        font-size:16px;
+    }
+    footer .right img{
+        margin-top: 10px;
+        margin-left: 15%;
+    }
+    footer span{
+        color: #fff;
+        display: inline-block;
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 50px;
     }
 </style>
 
