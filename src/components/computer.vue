@@ -29,7 +29,7 @@
             <div class="w">
                 <div class="main">
                     <h2>个人所得税计算</h2>
-                    <ul class="main-ul">
+                    <ul class="main-ul cf">
                         <router-link to="/comprehensiveIncome" @click.native="switchClick(1)" :class="{current:isCurrent == 1}" tag="li" class="main-li" >
                             <p class="main-li-tit cf">
                                 <span class="icon-1"></span>
@@ -51,7 +51,7 @@
                             </p>
                             <p :class="{white:isCurrent == 3}" class="main-li-content">租房、租车、租设备</p>
                         </router-link>
-                         <router-link to="/interest" @click.native="switchClick(4)" :class="{current:isCurrent == 4}" tag="li" class="main-li">
+                        <router-link to="/interest" @click.native="switchClick(4)" :class="{current:isCurrent == 4}" tag="li" class="main-li">
                             <p class="main-li-tit cf">
                                 <span class="icon-4"></span>
                                 <span :class="{white:isCurrent == 4}" class="title-name">利息、股息、红利所得</span>
@@ -288,10 +288,10 @@
         height:43px;
         vertical-align: middle;
         margin-right: 14px;
-        background: url("../../static/images/img1.png") no-repeat;
+        background: url("../../static/images/10.png") no-repeat;
     }
     .content .main .main-ul .main-li.current .main-li-tit .icon-1{
-        background: url("../../static/images/img1w.png") no-repeat;
+        background: url("../../static/images/10.png") no-repeat;
     }
     .content .main .main-ul .main-li .main-li-tit .icon-2{
         display:inline-block;
@@ -299,10 +299,10 @@
         height:43px;
         vertical-align: middle;
         margin-right: 14px;
-        background: url("../../static/images/img2.png") no-repeat;
+        background: url("../../static/images/10.png") no-repeat;
     }
     .content .main .main-ul .main-li.current .main-li-tit .icon-2{
-        background: url("../../static/images/img2w.png") no-repeat;
+        background: url("../../static/images/10.png") no-repeat;
     }
     .content .main .main-ul .main-li .main-li-tit .icon-3{
         display:inline-block;
@@ -310,10 +310,10 @@
         height:43px;
         vertical-align: middle;
         margin-right: 14px;
-        background: url("../../static/images/img3.png") no-repeat;
+        background: url("../../static/images/10.png") no-repeat;
     }
     .content .main .main-ul .main-li.current .main-li-tit .icon-3{
-        background: url("../../static/images/img3w.png") no-repeat;
+        background: url("../../static/images/10.png") no-repeat;
     }
     .content .main .main-ul .main-li .main-li-tit .icon-4{
         display:inline-block;
@@ -321,10 +321,10 @@
         height:43px;
         vertical-align: middle;
         margin-right: 14px;
-        background: url("../../static/images/img4.png") no-repeat;
+        background: url("../../static/images/10.png") no-repeat;
     }
     .content .main .main-ul .main-li.current .main-li-tit .icon-4{
-        background: url("../../static/images/img4w.png") no-repeat;
+        background: url("../../static/images/10.png") no-repeat;
     }
     .content .main .main-ul .main-li .main-li-tit .icon-5{
         display:inline-block;
@@ -332,10 +332,10 @@
         height:43px;
         vertical-align: middle;
         margin-right: 14px;
-        background: url("../../static/images/img5.png") no-repeat;
+        background: url("../../static/images/10.png") no-repeat;
     }
     .content .main .main-ul .main-li.current .main-li-tit .icon-5{
-        background: url("../../static/images/img5w.png") no-repeat;
+        background: url("../../static/images/10.png") no-repeat;
     }
     .content .main .main-ul .main-li .main-li-tit .icon-6{
         display:inline-block;
@@ -343,10 +343,10 @@
         height:43px;
         vertical-align: middle;
         margin-right: 14px;
-        background: url("../../static/images/img6.png") no-repeat;
+        background: url("../../static/images/10.png") no-repeat;
     }
     .content .main .main-ul .main-li.current .main-li-tit .icon-6{
-        background: url("../../static/images/img6w.png") no-repeat;
+        background: url("../../static/images/10.png") no-repeat;
     }
     .content .main .main-ul .main-li .main-li-tit .title-name{
         display: inline-block;
@@ -436,6 +436,271 @@
         font-size: 12px;
         text-align: center;
         margin-top: 50px;
+    }
+    @media screen and (max-width:768px) {
+        body {
+            width:100%;
+            font-size: 0.14rem;
+        }
+        .w{
+            width:6rem;
+        }
+        header{
+            height:0.6rem;
+        }
+        header .logo{
+            width:0.5rem;
+            height:0.5rem;
+            margin-top: 0.02rem;
+        }
+        header .login{
+            margin-top: 0.1rem;
+            width: 0.68rem;
+            height: 0.4rem;
+            line-height: 0.4rem;
+            margin-right: 0.2rem;
+            font-size:0.16rem;
+        }
+        header .register{
+            margin-top: 0.1rem;
+            width: 0.68rem;
+            height: 0.4rem;
+            line-height: 0.4rem;
+            margin-right: 0.2rem;
+            font-size:0.16rem;
+        }
+        nav{
+            width:100%;
+            height:0.6rem;
+        }
+        nav .nav-ul{
+            height:0.6rem;
+        }
+        nav .nav-ul .nav-li{
+            width: 0.6rem;
+            height: 0.6rem;
+            line-height: 0.6rem;
+            margin-right: 0rem;
+        }
+        nav .nav-ul .nav-li a{
+            display: inline-block;
+            width:0.6rem;
+            height:0.6rem;
+            font-size: 0.2rem;
+            vertical-align: top;
+        }
+        nav .tel{
+            width:1rem;
+            height:0.6rem;
+            display: block;
+            position: relative;
+            text-align: right;
+            top:0rem;
+            right: 0rem;
+        }
+        nav .tel img{
+            width:0.4rem;
+            height:0.4rem;
+            position: absolute;
+            top:0.1rem;
+            left: 0.5rem;
+            margin-top: 0;
+            margin-right: 0
+        }
+        nav .tel div{
+            display: none;
+            text-align: center;
+            width: 1.6rem;
+            height: 0.3rem;
+            position: absolute;
+            top: 0.6rem;
+            right: 0rem;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+        nav .tel div a{
+            height:0.6rem;
+            font-size:0.2rem;
+            color: #1a96d4;
+            text-decoration: none;
+            vertical-align: middle;
+        }
+        nav .tel span{
+            width:1.6rem;
+            font-size:0.18rem;
+            color: #1a96d4;
+            position: absolute;
+            top:0.2rem;
+            right: 0rem;
+        }
+        .content .banner{
+            width:100%;
+            height:2rem;
+            background: url("../../static/images/banner.png") no-repeat center;
+            background-size: 200%;
+        }
+        .content .main{
+            width:5.8rem;
+            border-radius: 5px;
+            padding: 0px 0.1rem 0.3rem;
+            text-align: center;
+            margin-top: -0.43rem;
+            margin-bottom: 0.30rem;
+        }
+        .content .main h2{
+            font-size:0.24rem;
+            margin: 0.36rem 0rem 0.16rem;
+        }
+        .content .main .main-ul .main-li{
+            width: 2.7rem;
+            height: 1rem;
+            padding: 0.06rem 0;
+            margin-top: 0.2rem;
+            margin-right: 0.1rem;
+            float: left;
+        }
+        .content .main .main-ul .main-li .main-li-tit{
+            height:0.43rem;
+            line-height: 0.43rem;
+        }
+
+        .content .main .main-ul .main-li .main-li-tit .icon-1{
+            width:0.43rem;
+            height:0.43rem;
+            margin-right: 0.14rem;
+            background-size: 100%;
+        }
+        .content .main .main-ul .main-li .main-li-tit .icon-2{
+            width:0.43rem;
+            height:0.43rem;
+            margin-right: 0.14rem;
+            background-size: 100%;
+        }
+        .content .main .main-ul .main-li .main-li-tit .icon-3{
+            width:0.43rem;
+            height:0.43rem;
+            margin-right: 0.14rem;
+            background-size: 100%;
+        }
+        .content .main .main-ul .main-li .main-li-tit .icon-4{
+            width:0.43rem;
+            height:0.43rem;
+            margin-right: 0.14rem;
+            background-size: 100%;
+        }
+        .content .main .main-ul .main-li .main-li-tit .icon-5{
+            width:0.43rem;
+            height:0.43rem;
+            margin-right: 0.14rem;
+             background-size: 100%;
+        }
+        .content .main .main-ul .main-li .main-li-tit .icon-6{
+            width:0.43rem;
+            height:0.43rem;
+            margin-right: 0.14rem;
+             background-size: 100%;
+        }
+        .content .main .main-ul .main-li.current .main-li-tit .icon-1{
+            background-size: 100%;
+        }
+        .content .main .main-ul .main-li.current .main-li-tit .icon-2{
+            background-size: 100%;
+        }
+        .content .main .main-ul .main-li.current .main-li-tit .icon-3{
+            background-size: 100%;
+        }
+        .content .main .main-ul .main-li.current .main-li-tit .icon-4{
+            background-size: 100%;
+        }
+        .content .main .main-ul .main-li.current .main-li-tit .icon-5{
+            background-size: 100%;
+        }
+        .content .main .main-ul .main-li.current .main-li-tit .icon-6{
+            background-size: 100%;
+        }
+
+        .content .main .main-ul .main-li .main-li-tit .title-name{
+            height:0.43rem;
+            font-size:0.18rem;
+        }
+        .content .main .main-ul .main-li .main-li-content{
+            font-size:0.14rem;
+            margin-top: 0rem;
+        }
+        footer{
+            width:100%;
+            height:2.6rem;
+            background-color: #2b3b4c;
+            display: block;
+        }
+
+        footer .left{
+            width:22%;
+            border-right: 0.01rem solid #fff;
+            height:1.5rem;
+            display: inline-block;
+            float: left;
+            margin-top: 0.3rem;
+            color: #fff;
+        }
+        footer .left .left-h1{
+            margin-top: 0rem;
+            font-size:0.16rem;
+        }
+        footer .left p{
+            margin-top: 0.03rem;
+            margin-left: 0.1rem;
+        }
+        footer .left a{
+            font-size:0.12rem;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer .content{
+            width:55%;
+            height:1.5rem;
+            display: inline-block;
+            margin-top: 0.30rem;
+            text-align: center;
+            color: #fff;
+        }
+        footer .content .content-h1{
+            margin-top: 0rem;
+            font-size:0.16rem;
+        }
+        footer .content p{
+            margin-top: 0.08rem;
+            font-size:0.12rem;
+        }
+
+        footer .right{
+            width:22%;
+            border-left: 0.01rem solid #fff;
+            height:1.5rem;
+            display: inline-block;
+            float: right;
+            margin-top: 0.30rem;
+            color: #fff;
+        }
+        footer .right .right-h1{
+            margin-top: 0rem;
+            margin-left: 20%;
+            font-size:0.16rem;
+        }
+        footer .right img{
+            width:1.3rem;
+            margin-top: 0.10rem;
+            margin-left: 15%;
+        }
+        footer span{
+            color: #fff;
+            display: inline-block;
+            width: 100%;
+            font-size: 0.12rem;
+            text-align: center;
+            margin-top: 0.5rem;
+        }
     }
 </style>
 

@@ -52,20 +52,11 @@
             </div>
             <ul class="module-ul">
                 <li class="module-li">
-                    <span class="module-li-tit">计算结果</span>
-                    <input class="module-li-short" type="text" readonly>
-                    <span>元</span>
-                </li>
-                <li class="module-li">
                     <span class="module-li-tit">税前收入</span>
                     <input class="module-li-short" type="text" readonly>
                     <span>元</span>
                 </li>
-                <li class="module-li">
-                    <span class="module-li-tit">适用税率</span>
-                    <input class="module-li-short" type="text" readonly>
-                    <span>元</span>
-                </li>
+
                 <li class="module-li">
                     <span class="module-li-tit">应纳税额</span>
                     <input class="module-li-short" type="text" readonly>
@@ -190,4 +181,95 @@
         margin-top: 40px;
         cursor: pointer;
     }
+    @media screen and (max-width:768px) {
+        .module{
+            width:100%;
+            margin-top: 0.1rem;
+        }
+        .module .module-tit{
+            display: inline-block;
+            border-bottom: 1px solid #1a96d4;
+            padding: 0.05rem 0.15rem 0.05rem 0.1rem;
+            font-size:0.3rem;
+        }
+        .module .module-tit img{
+            width:0.3rem;
+            height:0.3rem;
+        }
+        .module .module-tit #all{
+            width:0.3rem;
+            height:0.3rem;
+        }
+        .module .module-ul{
+            width:100%;
+            font-size:0;
+        }
+        .module .module-ul .module-li{
+            display: inline-block;
+            width:100%;
+            height:0.6rem;
+            font-size:0.24rem;
+            margin-top:0.2rem;
+        }
+        .module .module-ul .module-li .module-li-tit{
+            display: inline-block;
+            width:2rem;
+            height:100%;
+            font-size: 0.24rem;
+            margin-left: 0rem;
+        }
+        .module .module-ul .module-li .module-li-short{
+            display: inline-block;
+            width:3rem;
+            height:100%;
+            font-size:0.24rem;
+            border: 1px solid #b9e9f2;
+        }
+        .module .module-ul .module-subheading{
+            width:100%;
+            border-bottom: 1px solid #ccc;
+            padding: 0.2rem 0;
+        }
+        .module .module-ul .module-subheading span{
+            font-size:0.24rem;
+            padding-left: 0.2rem;
+        }
+        .module .module-ul .module-li-choice{
+            display: inline-block;
+            width:100%;
+            height:0.6rem;
+            font-size:0.24rem;
+            margin-top:0.2rem;
+        }
+        .module .module-ul .module-li-choice .choice{
+            width:90%;
+            height:0.6rem;
+            text-align: center;
+            line-height: 0.6rem;
+            cursor: pointer;
+            margin-left: 5%;
+        }
+        .module .module-ul .module-li-choice .choice-input{
+            width:90%;
+            height:0.6rem;
+            text-align: center;
+            line-height: 0.6rem;
+            margin-left: 5%;
+            padding: 0;
+        }
+        .module .module-ul .module-li-choice .choice.selected{
+            border: 1px solid #1a96d4;
+            color: #1a96d4;
+            background-color: #d1edf8;
+        }
+        .btn{
+            display: inline-block;
+            width: 2rem;
+            height: 0.6rem;
+            font-size:0.36rem;
+            line-height: 0.6rem;
+            margin-top: 0.4rem;
+        }
+    }
 </style>
+

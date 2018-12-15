@@ -11,7 +11,7 @@ export default {
 </script>
 <style>
     body, p, img, dl, dt, dd, ul, ol, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
-    body { position: relative; min-width: 960px; }
+    body { position: relative;}
     ul, ol { list-style: none; }
     img { border: 0 none; }
     input, select { vertical-align: middle; }
@@ -23,7 +23,6 @@ export default {
     html，body{
         height:100%;
         font-family: "思源黑体", "Arial";
-        font-size:14px;
     }
 </style>
 
